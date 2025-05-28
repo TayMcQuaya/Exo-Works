@@ -1,0 +1,896 @@
+/* General Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.page-section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); /* Subtle semi-transparent bottom border */
+}
+
+.page-section:last-child {
+    border-bottom: none; /* No border for the last section */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .page-section {
+        padding: 30px 15px;
+    }
+}
+
+
+/* AI Education Section (Page 4) Styles */
+#ai-education {
+    background-color: #005CE6;
+    color: #ffffff;
+}
+
+.ai-education-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 80px;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    padding: 0 0 60px 0;
+    text-align: left;
+}
+
+.logo {
+    height: 150px;
+    width: auto;
+}
+
+#ai-education .main-content-area {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 0;
+}
+
+#ai-education .text-content {
+    flex: 1;
+    max-width: 75%;
+}
+
+#ai-education h1 {
+    font-size: 5.5em;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    max-width: 100%;
+}
+
+#ai-education .subtitle {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0 0 50px 0;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    max-width: 100%;
+}
+
+#ai-education .text-content > p:not(.subtitle) {
+    font-size: 1.25em;
+    line-height: 1.5;
+    margin: 0 0 60px 0;
+    max-width: 100%;
+    opacity: 0.95;
+}
+
+#ai-education .columns {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    max-width: 100%;
+    margin-right: -100px;
+}
+
+#ai-education .column {
+    flex: 1;
+    min-width: 300px;
+}
+
+#ai-education .column h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    line-height: 1.2;
+}
+
+#ai-education .column p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.9;
+    max-width: 400px;
+}
+
+#ai-education .image-content {
+    flex: 0 0 25%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#ai-education .image-content img {
+    transform: scale(1.5) translate(100px);
+    transform-origin: top right;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1400px) {
+    .ai-education-content {
+        padding: 40px 60px;
+    }
+    
+    #ai-education .main-content-area {
+        gap: 60px;
+    }
+    
+    #ai-education .image-content {
+        flex: 0 0 450px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #ai-education h1 {
+        font-size: 4.5em;
+    }
+    
+    #ai-education .subtitle {
+        font-size: 1.8em;
+    }
+    
+    #ai-education .text-content > p:not(.subtitle) {
+        font-size: 1.2em;
+    }
+    
+    #ai-education .image-content {
+        flex: 0 0 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    .ai-education-content {
+        padding: 30px 40px;
+    }
+    
+    #ai-education .main-content-area {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    #ai-education .text-content,
+    #ai-education .subtitle,
+    #ai-education .text-content > p:not(.subtitle) {
+        max-width: 100%;
+    }
+    
+    #ai-education .image-content {
+        width: 100%;
+        flex: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .ai-education-content {
+        padding: 20px;
+    }
+    
+    #ai-education h1 {
+        font-size: 3.5em;
+    }
+    
+    #ai-education .subtitle {
+        font-size: 1.5em;
+    }
+    
+    #ai-education .columns {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    #ai-education .column {
+        max-width: 100%;
+    }
+}
+
+/* Solution Section (Page 5) Styles */
+#solution {
+    background-color: #ffffff;
+}
+
+.solution-content {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 40px 40px 60px 40px;
+    box-sizing: border-box;
+}
+
+.logo-container-alt {
+    margin-bottom: 40px;
+}
+
+
+.solution-text-container {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#solution .title-group {
+    margin-bottom: 30px;
+    float: left;
+    width: 100%;
+}
+
+#solution h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #005CE6;
+    margin: 0 0 8px 0;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+#solution .subtitle {
+    font-size: 20px;
+    color: #222222;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.solution-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 80px; /* pushes everything below it down */
+}
+
+.solution-left {
+    flex: 0.8; /* smaller title area */
+    min-width: 250px;
+}
+
+.solution-right {
+    flex: 1.2; /* increase width of the right box */
+    max-width: 600px;
+}
+
+.solution-right h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #005CE6; /* Same color as title */
+    margin: 0 0 10px 0;
+}
+
+.solution-right p {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222;
+    margin: 0;
+}
+
+#solution .highlight-section {
+    float: right;
+    width: 320px;
+    margin-left: 40px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#solution .highlight-section h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #005CE6;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+
+#solution .highlight-section p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    font-weight: 700;
+}
+
+#solution .main-text {
+    float: left;
+    width: calc(100% - 360px);
+    padding-right: 30px;
+    box-sizing: border-box;
+}
+
+#solution .main-text p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 0 20px 0;
+}
+
+#solution .main-text p:last-child {
+    margin-bottom: 0;
+}
+
+#solution .main-text p strong {
+    color: #333;
+    font-weight: 700;
+}
+
+.solution-image-container {
+    clear: both;
+    width: 100%;
+    max-width: 1080px;
+    margin: 50px auto 0 auto;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 25px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.solution-image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+solution-followup {
+    margin-top: 20px; /* pushes it slightly down */
+    font-size: 18px;   /* makes it slightly larger */
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+}
+
+.solution-followup p {
+    margin-bottom: 16px;
+}
+
+.solution-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; /* spacing from the text above */
+}
+
+.solution-image-wrapper img {
+    width: 95%; /* scale image beyond container */
+    max-width: none; /* override default scaling */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
+}
+
+.solution-followup {
+    font-size: 18px;        /* Slightly larger than default */
+    line-height: 1.6;       /* More readable line spacing */
+    margin-top: 20px;       /* Adds space above the text */
+    color: #222;            /* Optional: darker for better readability */
+  }
+
+/* Responsive adjustments for Solution section */
+@media (max-width: 992px) {
+    .solution-content {
+        padding: 30px 20px 40px 20px;
+    }
+    #solution h1 {
+        font-size: 48px;
+    }
+    #solution .subtitle {
+        font-size: 18px;
+    }
+    #solution .highlight-section {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 25px;
+        text-align: center;
+    }
+    #solution .highlight-section h2, #solution .highlight-section p {
+        text-align: left;
+    } 
+    #solution .main-text {
+        float: none;
+        width: 100%;
+        padding-right: 0;
+        margin-top: 0;
+    }
+    #solution .title-group {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+     #solution h1, #solution .subtitle {
+        text-align: center;
+    }
+
+    #solution .highlight-section p,
+    #solution .main-text p {
+        font-size: 16px;
+    }
+     .solution-image-container {
+        max-width: 95%;
+        margin-top: 40px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #solution h1 {
+        font-size: 40px;
+    }
+    #solution .subtitle {
+        font-size: 16px;
+    }
+    #solution .highlight-section h2 {
+        font-size: 20px;
+    }
+    #solution .highlight-section p,
+    #solution .main-text p {
+        font-size: 14px;
+    }
+    .solution-image-container {
+        padding: 15px;
+    }
+    .solution-layout {
+        flex-direction: column;
+    }
+
+    .solution-right {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .solution-right p {
+        text-align: left;
+    }
+}
+
+/* Product Section (Page 6) Styles */
+#product {
+    background-color: #ffffff;
+}
+
+.product-content {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 80px;
+    box-sizing: border-box;
+}
+
+#product .product-main-layout {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+#product .product-text-content {
+    flex: 1;
+}
+
+#product h1 {
+    font-size: 5em;
+    font-weight: 700;
+    color: #005CE6;
+    margin: 0 0 50px 0;
+    line-height: 1;
+    letter-spacing: -0.02em;
+}
+
+.product-diagram-container {
+    margin: 0 0 40px 0;
+}
+
+.product-diagram {
+    width: 100%;
+    height: auto;
+}
+
+#product .product-text-content p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+    color: #333;
+}
+
+#product h2 {
+    font-size: 1.8em;
+    font-weight: 600;
+    color: #005CE6;
+    margin: 50px 0 20px 0;
+    line-height: 1.2;
+}
+
+#product ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#product ul li {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+    color: #333;
+    padding-left: 25px;
+    position: relative;
+}
+
+#product ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #005CE6;
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+#product .product-image-showcase {
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.dashboard-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translate(80px, 40px);
+}
+
+#product h1 {
+    font-size: 3.5em; /* was 5em */
+}
+
+#product h2 {
+    font-size: 1.4em; /* was 1.8em */
+}
+
+#product .product-text-content p {
+    font-size: 1em; /* was 1.2em */
+}
+
+#product ul li {
+    font-size: 1em; /* was 1.2em */
+}
+
+.product-content {
+    padding: 40px 60px; /* less space around */
+}
+
+#product .product-main-layout {
+    gap: 40px; /* reduce gap between columns */
+}
+
+.dashboard-image {
+    max-width: 100%; /* optional */
+}
+
+.blue {
+    color: #005CE6;
+  }
+
+/* Responsive adjustments for Product section */
+@media (max-width: 1200px) {
+    .ai-education-content,
+    .solution-content,
+    .product-content,
+    .team-content {
+        padding: 40px;
+    }
+    
+    #ai-education h1,
+    #solution h1,
+    #product h1,
+    #our-team h1 {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 992px) {
+    .team-layout-container,
+    #product .product-main-layout {
+        flex-direction: column;
+    }
+    
+    #product .product-image-showcase,
+    #our-team .team-photos-column,
+    #our-team .team-roles-column {
+        width: 100%;
+    }
+    
+    #our-team .team-roles-column {
+        padding-left: 0;
+        border-left: none;
+        padding-top: 40px;
+        border-top: 2px solid #005CE6;
+    }
+}
+
+@media (max-width: 768px) {
+    .ai-education-content,
+    .solution-content,
+    .product-content,
+    .team-content {
+        padding: 30px 20px;
+    }
+    
+    #ai-education h1,
+    #solution h1,
+    #product h1,
+    #our-team h1 {
+        font-size: 3em;
+    }
+    
+    .team-member img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    #ai-education h1,
+    #solution h1,
+    #product h1,
+    #our-team h1 {
+        font-size: 2.5em;
+    }
+    
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Our Team Section (Page 11) Styles */
+#our-team.page-section { /* More specific selector if #our-team itself is the page-section */
+    justify-content: flex-start; /* Align content to the top for this section */
+}
+
+/* If #our-team is a wrapper and .page-section is a child, the above won't work directly.
+   Assuming #our-team IS the .page-section element as per common structure. */
+
+#our-team {
+    background-color: #ffffff;
+}
+
+.team-content { /* This is the direct child of #our-team.page-section */
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 80px; /* 60px top/bottom padding is maintained */
+    box-sizing: border-box;
+}
+
+#our-team .logo-container-alt {
+    margin-top: 0;  /* Reduced from 60px to bring logo higher */
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+#our-team h1 {
+    font-size: 4em;
+    font-weight: 700;
+    color: #005CE6;
+    margin: 0 0 40px 0;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    transform: translateY(-20px); /* Adjust this as needed */
+}
+
+.team-layout-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+#our-team .team-text-column {
+    flex: 1.2;
+    margin-right: 40px;
+}
+
+#our-team .team-text-column p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+    color: #333;
+}
+
+#our-team .team-photos-column {
+    position: relative;
+    flex: 0.8;
+    height: 360px; /* enough height to form triangle */
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #005CE6;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #005CE6;
+    margin: 0;
+    line-height: 1.2;
+}
+
+#our-team .team-roles-column {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 2px solid #005CE6;
+
+     /* Position adjustments */
+     margin-top: 40px;
+     transform: translateX(120px); /* shift right */
+     margin-top: 10px;
+}
+
+.team-member:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    transform: translateX(-50%);
+}
+
+.team-member:nth-child(2) {
+    position: absolute;
+    top: 190px;
+    left: 80%;
+    transform: translateX(-50%);
+}
+
+.team-member:nth-child(3) {
+    position: absolute;
+    top: 360px;
+    left: 35%;
+    transform: translateX(-50%);
+}
+
+.roles-list {
+    margin: 0 0 20px 0;
+}
+
+.roles-list:last-child {
+    margin-bottom: 0;
+}
+
+.roles-list h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 10px 0;
+    line-height: 1.2;
+}
+
+.roles-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.roles-list ul li {
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 0 0 8px 0;
+    color: #666;
+    padding-left: 15px;
+    position: relative;
+}
+
+.roles-list ul li::before {
+    content: "–";
+    position: absolute;
+    left: 0;
+    color: #005CE6;
+}
+
+#our-team.page-section {
+    justify-content: flex-start; /* allows vertical control */
+  }
+
+#our-team h1 {
+    margin-top: -40px; /* move title higher */
+  }
+
+/* Responsive adjustments for Our Team section */
+@media (max-width: 992px) { /* Tablet */
+    .team-layout-container {
+        flex-direction: column;
+        align-items: center; /* Center items when stacked */
+    }
+    #our-team .team-text-column,
+    #our-team .team-photos-column,
+    #our-team .team-roles-column {
+        flex-basis: auto; /* Allow full width */
+        width: 90%; /* Control width of stacked columns */
+        margin-bottom: 30px;
+        text-align: center; /* Center text content in columns */
+    }
+    #our-team .team-roles-column {
+        padding-left: 0;
+        border-left: none; /* Remove border when stacked */
+        border-top: 2px solid #005CE6; /* Add top border as separator */
+        padding-top: 20px;
+        text-align: left; /* Keep lists left aligned within centered block */
+    }
+    .roles-list ul {
+         display: inline-block; /* Allows centering of the list block */
+         text-align: left;
+    }
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) { /* Smaller Tablets / Large Mobile */
+    #our-team h1 {
+        font-size: 2.5em;
+    }
+     #our-team .team-text-column,
+    #our-team .team-photos-column,
+    #our-team .team-roles-column {
+        width: 95%;
+    }
+}
+
+@media (max-width: 576px) { /* Mobile phones */
+    #our-team h1 {
+        font-size: 2em;
+    }
+    .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+    .roles-list h2 {
+        font-size: 1em;
+    }
+    .roles-list ul li {
+        font-size: 0.85em;
+    }
+} 
