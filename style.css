@@ -36,7 +36,7 @@ body {
 
 /* AI Education Section (Page 4) Styles */
 #ai-education {
-    background-color: #005CE6;
+    background-color: #5C0D8D;
     color: #ffffff;
 }
 
@@ -251,7 +251,7 @@ body {
 #solution h1 {
     font-size: 56px;
     font-weight: 700;
-    color: #005CE6;
+    color: #5C0D8D;
     margin: 0 0 8px 0;
     line-height: 1.1;
     letter-spacing: -0.02em;
@@ -287,7 +287,7 @@ body {
 .solution-right h2 {
     font-size: 22px;
     font-weight: 700;
-    color: #005CE6; /* Same color as title */
+    color: #5C0D8D;
     margin: 0 0 10px 0;
 }
 
@@ -310,7 +310,7 @@ body {
 #solution .highlight-section h2 {
     font-size: 22px;
     font-weight: 700;
-    color: #005CE6;
+    color: #5C0D8D;
     margin: 0 0 10px 0;
     line-height: 1.2;
 }
@@ -499,12 +499,13 @@ solution-followup {
 
 #product .product-text-content {
     flex: 1;
+    margin-top: -10px;
 }
 
 #product h1 {
     font-size: 5em;
     font-weight: 700;
-    color: #005CE6;
+    color: #5C0D8D;
     margin: 0 0 50px 0;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -529,7 +530,7 @@ solution-followup {
 #product h2 {
     font-size: 1.8em;
     font-weight: 600;
-    color: #005CE6;
+    color: #5C0D8D;
     margin: 50px 0 20px 0;
     line-height: 1.2;
 }
@@ -553,10 +554,11 @@ solution-followup {
     content: "•";
     position: absolute;
     left: 0;
-    color: #005CE6;
+    color: #5C0D8D;
     font-size: 1.2em;
     line-height: 1;
 }
+
 
 #product .product-image-showcase {
     flex: 0 0 45%;
@@ -582,11 +584,13 @@ solution-followup {
 }
 
 #product .product-text-content p {
-    font-size: 1em; /* was 1.2em */
+    font-size: 1.15em; /* increased from 1em */
+    line-height: 1.6;  /* improves spacing */
 }
 
 #product ul li {
-    font-size: 1em; /* was 1.2em */
+    font-size: 1.15em; /* increased from 1em */
+    line-height: 1.6;
 }
 
 .product-content {
@@ -602,7 +606,7 @@ solution-followup {
 }
 
 .blue {
-    color: #005CE6;
+    color: #5C0D8D;
   }
 
 /* Responsive adjustments for Product section */
@@ -638,7 +642,7 @@ solution-followup {
         padding-left: 0;
         border-left: none;
         padding-top: 40px;
-        border-top: 2px solid #005CE6;
+        border-top: 2px solid #5C0D8D;
     }
 }
 
@@ -706,7 +710,7 @@ solution-followup {
 #our-team h1 {
     font-size: 4em;
     font-weight: 700;
-    color: #005CE6;
+    color: #5C0D8D;
     margin: 0 0 40px 0;
     line-height: 1;
     letter-spacing: -0.02em;
@@ -717,17 +721,17 @@ solution-followup {
 .team-layout-container {
     display: flex;
     gap: 40px;
-    align-items: flex-start;
 }
 
 #our-team .team-text-column {
     flex: 1.2;
     margin-right: 40px;
+    margin-top: 60px;
 }
 
 #our-team .team-text-column p {
-    font-size: 1em;
-    line-height: 1.5;
+    font-size: 1.3em; 
+    line-height: 1.6;
     margin: 0 0 20px 0;
     color: #333;
 }
@@ -747,14 +751,14 @@ solution-followup {
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid #005CE6;
+    border: 3px solid #5C0D8D;
     margin-bottom: 10px;
 }
 
 .team-member p {
     font-size: 1.2em;
     font-weight: 500;
-    color: #005CE6;
+    color: #5C0D8D;
     margin: 0;
     line-height: 1.2;
 }
@@ -762,7 +766,7 @@ solution-followup {
 #our-team .team-roles-column {
     flex: 1;
     padding-left: 20px;
-    border-left: 2px solid #005CE6;
+    border-left: 2px solid #5C0D8D;
 
      /* Position adjustments */
      margin-top: 40px;
@@ -827,7 +831,7 @@ solution-followup {
     content: "–";
     position: absolute;
     left: 0;
-    color: #005CE6;
+    color: #5C0D8D;
 }
 
 #our-team.page-section {
@@ -836,6 +840,12 @@ solution-followup {
 
 #our-team h1 {
     margin-top: -40px; /* move title higher */
+  }
+
+  .team-inner-content {
+    font-size: 1.08em;         /* Slightly increase everything inside */
+    transform: scale(1.03);    /* Optional: slight zoom */
+    transform-origin: top left;
   }
 
 /* Responsive adjustments for Our Team section */
@@ -855,7 +865,7 @@ solution-followup {
     #our-team .team-roles-column {
         padding-left: 0;
         border-left: none; /* Remove border when stacked */
-        border-top: 2px solid #005CE6; /* Add top border as separator */
+        border-top: 2px solid #5C0D8D; /* Add top border as separator */
         padding-top: 20px;
         text-align: left; /* Keep lists left aligned within centered block */
     }
