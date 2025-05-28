@@ -820,6 +820,7 @@ solution-followup {
     color: #666;
     padding-left: 15px;
     position: relative;
+    font-weight: 700; 
 }
 
 .roles-list ul li::before {
